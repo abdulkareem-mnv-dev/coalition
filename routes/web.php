@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','indexController@index');
+
+Route::post('/add-product','indexController@addProduct');
